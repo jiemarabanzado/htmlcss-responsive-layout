@@ -15,7 +15,10 @@
 .container{
     max-width: 100%;
     margin: auto;
-
+}
+.sub-container{
+    max-width: 100%;
+    margin: auto;
 }
 
 
@@ -31,9 +34,13 @@
 ----------------*/
 header{
     background-color: #0084fd;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    padding: 10px 25px;
 }
 .head-nav{
-    padding: 10px 20px;
+
 }
 .left-head{
     width: 30%;
@@ -68,28 +75,152 @@ header{
     border: none;
     border-radius: 30px;
 }
+/*----------------
+-----main---------
+----------------*/
+.card-grid{
+    padding: 100px 25px;
+    width: 100%;
+}
+.card-title{
+    font-size: 1.65rem;
+    color: #0084fd;
+    margin-bottom: 25px;
+}
+.card{
+    background-color: #b5ddff;
+    width:100%;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+.card-p{
+    margin-bottom: 30px;
+}
+.card-button{
+    background-color: #0084fd;
+    color: white;
+    padding: 10px 70px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+}
+.button-icon{
+    font-size: 1.10rem;
+    margin-right: 7px;
+}
+.card-image{
+    width: 300px;
+    display: block;
+}
+.card:not(:first-child){
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.card-icon{
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: #0084fd;
+}
 
+/*-----------------
+--section planning
+------------------*/
+.planning-section{
+    background-color: #9792e4;
+    padding: 30px 25px;
+}
+.planning-img{
+    width: 100%;
+}
+.planning-img{
+    padding: 30px 25px;
 
-
-
-
-
-
-
-
+}
+.planning-right{
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+    padding: 15px 10px;
+}
+.planning-left img{
+    margin-bottom: 60px;
+}
+.planning-title{
+    font-size: 2.7rem;
+    color: white;
+    margin-bottom: 40px;
+}
+.planning-p{
+    color: white;
+    margin-bottom: 40px;
+}
+.planning-right h2{
+    margin-bottom: 30px;
+}
 /*-------------------
 -----media query-----
 -------------------*/
-@media screen and (min-width:993px) {
+@media screen and (min-width:768px){
+    .card:first-child{
+        width: calc(100%/3*2 - 10px);
+    } 
+    .card{
+        width: calc(100%/3 - 10px);
+    } 
+    .card-grid{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width:992px) {
+    /*--common---*/
     .container{
         max-width: 1050px;
     }
+    .sub-container{
+        max-width: 750px;
+    }
+    /*---header---*/
     .nav-list{
         display: block;
     }
     .icon-head{
         display: none;
+    } 
+    /*----main cards---*/
+    .card-grid{
+        padding: 100px 0px;
     }
-
-    
+    .card:first-child{
+        display: flex;
+    }
+    .card:first-child .left-card{
+        width: 50%;
+    }
+    .right-card{
+        width: 50%;
+    }
+    /*-----planning---*/
+    .planning{
+        display: flex;
+    }
+    .planning-left{
+        width: 60%;
+        padding-right: 20px;
+    }
+ 
+    .planning-right{
+        width: 40%;
+        align-self: flex-end;
+    }
+    .planning-p{
+        margin-bottom: 0px;
+    }
 }
