@@ -1,3 +1,95 @@
-body{
-    background-color: pink;
+/*----------------
+--------reset-----
+------------------*/
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+/*-----------------
+-------common-----
+------------------*/
+.row{
+    display: flex;
+}
+.container{
+    max-width: 100%;
+    margin: auto;
+
+}
+
+
+
+
+
+
+
+
+
+/*---------------
+------header-----
+----------------*/
+header{
+    background-color: #0084fd;
+}
+.head-nav{
+    padding: 10px 20px;
+}
+.left-head{
+    width: 30%;
+}
+.right-head{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.icon-head{
+    font-size: 1.5rem;
+    color: white;
+}
+.nav-list{
+    display: none;
+}
+.right-head .nav-list ul{
+    list-style: none;
+    align-items: center;
+    font-size: 1.15rem;
+}
+.right-head .nav-list ul li{
+    padding: 0px 10px;
+}
+.right-head .nav-list ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-button{
+    padding: 7px 10px;
+    border: none;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+/*-------------------
+-----media query-----
+-------------------*/
+@media screen and (min-width:993px) {
+    .container{
+        max-width: 1050px;
+    }
+    .nav-list{
+        display: block;
+    }
+    .icon-head{
+        display: none;
+    }
+
+    
 }
