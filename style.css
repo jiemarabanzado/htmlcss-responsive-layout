@@ -20,6 +20,10 @@
     max-width: 100%;
     margin: auto;
 }
+.started-container{
+    max-width: 100%;
+    margin: auto;
+}
 
 
 
@@ -35,6 +39,7 @@
 header{
     background-color: #0084fd;
     position: fixed;
+    z-index: 1;
     left: 0px;
     right: 0px;
     padding: 10px 25px;
@@ -133,6 +138,7 @@ header{
 .planning-section{
     background-color: #9792e4;
     padding: 30px 25px;
+    margin-bottom: 50px;
 }
 .planning-img{
     width: 100%;
@@ -175,8 +181,199 @@ header{
     background-color: #9792e4;
 }
 /*-------------------
+--sezione testimonials
+--------------------*/
+.testimonials{
+    text-align: center;
+    padding: 0px 25px;
+    margin-bottom: 50px;
+}
+#categorie{
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+.testimonials-title{
+    font-size: 2.7rem;
+    color: #9792e4;
+    margin-bottom: 30px;
+}
+.testimonials p{
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+.person{
+  max-width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.person-img{
+    width: 500px;
+}
+
+.testimonial-card{
+    background-color: #9792e4;
+    padding: 40px 20px;
+    border-radius: 35px;
+    margin-bottom: 30px;
+}
+.quote{
+    color:white
+}
+/*------------------
+-benefits----------
+------------------*/
+.benefits{
+    background-color:#9792e4;
+    padding: 50px 25px;
+    margin-bottom: 50px;
+}
+.benefits-title{
+    text-align: center;
+    font-size: 2.7rem;
+    color: white;
+    margin-bottom: 50px;
+}
+.benefit-card{
+    padding: 35px 25px;
+    background-color: white;
+    border-radius: 35px;
+    margin-bottom: 20px;
+}
+.benefit-card h2 {
+    font-size: 4rem;
+    color: #9792e4;
+    margin-bottom: 15px;
+}
+.benefit-card h3{
+    font-size: 1.6rem;
+    color: #9792e4;
+    margin-bottom: 18px;
+}
+.benefit-card p{
+    margin-bottom: 25px;
+}
+.more{
+    padding: 10px 40px;
+    background-color: #9792e4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+/*-------------------
+----About-us--------
+-------------------*/
+.about-us{
+    padding: 0px 25px;
+    margin-bottom: 50px;
+}
+.left-about h2{
+    font-size: 3.9rem;
+    color: #9792e4;
+    padding-bottom: 30px;
+}
+.left-about p{
+    margin-bottom: 50px;
+}
+.person-about{
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.img-icon{
+    position: relative;
+    width: 200px;
+    margin-bottom: 30px;
+}
+.quote-mark{
+    color: #9792e4;
+    font-size: 50px;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.about-img{
+    width: 200px; 
+}
+.right-about h3{
+    font-size: 2rem;
+    color: #9792e4;
+    margin-bottom: 30px;
+}
+.right-about button{
+    color: white;
+    background-color: #9792e4;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+.Linkedin{
+    padding-right: 10px;
+}
+/*------------------
+---get-started------
+-------------------*/
+.get-started{
+    background-color: #9792e4;
+    text-align: center;
+    padding: 50px 25px;
+}
+#started{
+    color: #d5d4f4;
+    margin-bottom: 20px;
+}
+.get-started h3{
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 25px;
+}
+#free{
+    font-size: 4.5rem;
+    color: #fdc15f;
+    margin-bottom: 25px;
+}
+.get-started p{
+    color: white;
+    margin-bottom: 25px;
+}
+.get-started button{
+    background-color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.06rem;
+    color: #9792e4;
+    margin-bottom: 20px;
+}
+/*------------
+---footer---
+-----------*/
+footer{
+    background-color: #333333;
+    text-align: center;
+    color: white;
+}
+.foot{ 
+    padding: 40px 25px;
+}
+.foot p{
+    margin-bottom: 70px;
+}
+/*-------------------
 -----media query-----
 -------------------*/
+@media screen and (min-width:470px){
+    .started-container{
+        max-width: 470px ;
+    }
+}    
 @media screen and (min-width:768px){
     .card:first-child{
         width: calc(100%/3*2 - 10px);
@@ -189,11 +386,46 @@ header{
         justify-content: space-between;
         flex-wrap: wrap;
     }
+    /*testimonials*/
+    .testimonial-card{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .person{
+        width: calc(100%/3 - 15px);
+        margin-bottom: 0px;
+    }
+    .quote{
+        width: calc(100%/3*2 - 15px);
+        text-align: left;
+    }
+    /*--benefits---*/
+    .benefit-grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .benefit-card{
+        width:calc(50% - 15px);
+    }
+    /*----about row---*/
+    .about-row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .left-about{
+        width: 55%;
+        padding: 0px 20px;
+    }
+    .right-about{
+        width: 40%;
+    }
 }
 @media screen and (min-width:992px) {
     /*--common---*/
     .container{
-        max-width: 1050px;
+        max-width: 100%;
     }
     .sub-container{
         max-width: 750px;
@@ -233,5 +465,32 @@ header{
     }
     .planning-p{
         margin-bottom: 0px;
+    }
+    /*----testimonials--*/
+    .testimonials{
+        padding: 0px 0px;
+    }
+    .person{
+        width: 25%;
+    }
+    .quote{
+        width: 65%;
+    }
+    /*-----benefits-----*/
+    .benefit-card{
+        width:calc(100%/3 - 10px);
+    }
+    /*-----about---*/
+    .left-about{
+        width: 68%;
+    }
+    .right-about{
+        width: 25%;
+    }
+}
+/*---messo questo per renderlo un po piu fluido*/
+@media screen and (min-width:1050px){
+    .container{
+        max-width: 1050px;
     }
 }
