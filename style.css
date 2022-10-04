@@ -201,19 +201,11 @@ header{
     font-size: 1.1rem;
     margin-bottom: 40px;
 }
-.person{
-  max-width: 250px;
-  height: 250px;
-  overflow: hidden;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin: auto;
-  margin-bottom: 40px;
-}
 .person-img{
-    width: 500px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .testimonial-card{
@@ -280,12 +272,6 @@ header{
 .left-about p{
     margin-bottom: 50px;
 }
-.person-about{
-   width: 200px;
-   height: 200px;
-   border-radius: 50%;
-   overflow: hidden;
-}
 .img-icon{
     position: relative;
     width: 200px;
@@ -300,6 +286,9 @@ header{
 }
 .about-img{
     width: 200px; 
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 .right-about h3{
     font-size: 2rem;
